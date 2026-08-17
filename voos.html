@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AeroSuite — Voos agendados</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="topbar topbar--centered">
+    <a class="back-btn" href="index.html" aria-label="Voltar">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <h1>Voos agendados</h1>
+  </header>
+
+  <main class="app__scroll">
+
+    <section class="flight-list" aria-label="Lista de voos agendados">
+
+      <article class="flight-card">
+        <div class="flight-route">
+          <div class="flight-route__point">
+            <span class="flight-route__code">BQH</span>
+            <span class="flight-route__city">Florianópolis, SC</span>
+          </div>
+
+          <div class="flight-path">
+            <span class="flight-path__duration">35m</span>
+            <div class="flight-path__line">
+              <span class="flight-path__plane" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V4a1.5 1.5 0 0 0-3 0v5l-8 5v2l8-2.5V19l-2.5 1.5V22l3.5-1 3.5 1v-1.5L12 19v-5.5l9 2.5Z"/></svg>
+              </span>
+            </div>
+            <span class="flight-path__tag">DIRETO</span>
+          </div>
+
+          <div class="flight-route__point flight-route__point--end">
+            <span class="flight-route__code">LBG</span>
+            <span class="flight-route__city">Vitória, ES</span>
+          </div>
+        </div>
+
+        <div class="flight-meta">
+          <div>
+            <p class="flight-meta__label">Data</p>
+            <p class="flight-meta__value">31 Ago, 2026</p>
+          </div>
+          <div>
+            <p class="flight-meta__label">Partida</p>
+            <p class="flight-meta__value flight-meta__value--accent">15:00 · Agora</p>
+          </div>
+          <div>
+            <p class="flight-meta__label">Aeronave</p>
+            <p class="flight-meta__value">Gulfstream G650</p>
+          </div>
+          <div>
+            <p class="flight-meta__label">Passageiros</p>
+            <p class="flight-meta__value">4 Pessoas</p>
+          </div>
+        </div>
+
+        <a href="confirmar-voo.html" class="btn btn-primary" style="margin-top:18px;">Confirmar Voo</a>
+      </article>
+
+      <article class="flight-card">
+        <div class="flight-route">
+          <div class="flight-route__point">
+            <span class="flight-route__code">DDB</span>
+            <span class="flight-route__city">Avenida Paulista, SP</span>
+          </div>
+
+          <div class="flight-path">
+            <span class="flight-path__duration">1h 45m</span>
+            <div class="flight-path__line">
+              <span class="flight-path__plane" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V4a1.5 1.5 0 0 0-3 0v5l-8 5v2l8-2.5V19l-2.5 1.5V22l3.5-1 3.5 1v-1.5L12 19v-5.5l9 2.5Z"/></svg>
+              </span>
+            </div>
+          </div>
+
+          <div class="flight-route__point flight-route__point--end">
+            <span class="flight-route__code">LJH</span>
+            <span class="flight-route__city">Bangu, RJ</span>
+          </div>
+        </div>
+
+        <div class="flight-meta">
+          <div>
+            <p class="flight-meta__label">Data</p>
+            <p class="flight-meta__value">15 Set, 2026</p>
+          </div>
+          <div>
+            <p class="flight-meta__label">Partida</p>
+            <p class="flight-meta__value">14:30</p>
+          </div>
+          <div>
+            <p class="flight-meta__label">Aeronave</p>
+            <p class="flight-meta__value">XPX 3000</p>
+          </div>
+          <div>
+            <p class="flight-meta__label">Passageiros</p>
+            <p class="flight-meta__value">8 Pessoas</p>
+          </div>
+        </div>
+
+        <a href="#" class="link-accent" style="display:block; text-align:center; margin-top:16px;">Ver detalhes</a>
+      </article>
+
+    </section>
+
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navegação principal">
+    <a href="index.html">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M4 11.5 12 4l8 7.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v9h12v-9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Início
+    </a>
+    <a href="voos.html" class="is-active">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M21 16v-2l-8-5V4a1.5 1.5 0 0 0-3 0v5l-8 5v2l8-2.5V19l-2.5 1.5V22l3.5-1 3.5 1v-1.5L12 19v-5.5l9 2.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+      Voos
+    </a>
+    <a href="explorar.html">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="m15 9-2 6-6 2 2-6 6-2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      Explorar
+    </a>
+  </nav>
+
+</div>
+</body>
+</html>
