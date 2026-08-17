@@ -1,12 +1,6 @@
-/* ==========================================================================
-   AeroSuite — Private Aviation App
-   Shared stylesheet for all four screens
-   ========================================================================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
-:root {
-  /* Color tokens */
+:root{
   --bg: #080b13;
   --bg-glow: radial-gradient(120% 80% at 50% -10%, #101a2e 0%, #080b13 55%);
   --card: #10182a;
@@ -37,17 +31,17 @@
   color-scheme: dark;
 }
 
-* {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html {
+html{
   -webkit-tap-highlight-color: transparent;
 }
 
-body {
+body{
   min-height: 100vh;
   background: var(--bg-glow), var(--bg);
   color: var(--text-primary);
@@ -57,26 +51,23 @@ body {
   padding: 32px 16px;
 }
 
-img {
+img{
+  width: 70%;
   max-width: 100%;
   display: block;
 }
 
-a {
+a{
   color: inherit;
   text-decoration: none;
 }
 
-button {
+button{
   font-family: inherit;
   cursor: pointer;
 }
 
-/* ==========================================================================
-   App shell — every screen is a "device" grid: header / scroll area / nav
-   ========================================================================== */
-
-.app {
+.app{
   width: 100%;
   max-width: 390px;
   min-height: 780px;
@@ -90,7 +81,7 @@ button {
   position: relative;
 }
 
-.app__scroll {
+.app__scroll{
   overflow-y: auto;
   padding: 22px 20px 12px;
   display: flex;
@@ -98,15 +89,11 @@ button {
   gap: 26px;
 }
 
-.app__scroll::-webkit-scrollbar {
+.app__scroll::-webkit-scrollbar{
   display: none;
 }
 
-/* ==========================================================================
-   Top bar
-   ========================================================================== */
-
-.topbar {
+.topbar{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -114,13 +101,13 @@ button {
   padding: 22px 20px 4px;
 }
 
-.topbar__identity {
+.topbar__identity{
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.avatar {
+.avatar{
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -132,7 +119,7 @@ button {
   flex-shrink: 0;
 }
 
-.eyebrow {
+.eyebrow{
   font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -140,14 +127,14 @@ button {
   font-weight: 600;
 }
 
-.topbar h1 {
+.topbar h1{
   font-family: 'Space Grotesk', sans-serif;
   font-size: 19px;
   font-weight: 600;
   margin-top: 2px;
 }
 
-.icon-btn {
+.icon-btn{
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -160,13 +147,13 @@ button {
   transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
 }
 
-.icon-btn:hover {
+.icon-btn:hover{
   background: var(--card-alt);
   color: var(--text-primary);
   transform: translateY(-1px);
 }
 
-.icon-btn .dot {
+.icon-btn .dot{
   position: absolute;
   top: 9px;
   right: 10px;
@@ -177,7 +164,7 @@ button {
   box-shadow: 0 0 0 2px var(--card);
 }
 
-.back-btn {
+.back-btn{
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -189,16 +176,16 @@ button {
   transition: background 0.2s ease, transform 0.15s ease;
 }
 
-.back-btn:hover {
+.back-btn:hover{
   background: var(--card-alt);
   transform: translateX(-2px);
 }
 
-.topbar--centered {
+.topbar--centered{
   justify-content: flex-start;
 }
 
-.topbar--centered h1 {
+.topbar--centered h1{
   flex: 1;
   text-align: center;
   margin-right: 40px;
