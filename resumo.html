@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resumo do voo | SkyPrime</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyroad - Resumo do voo</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="app app--summary">
-    <header class="cabecalho cabecalho--centered">
-      <a class="botaoVoltar" href="calendario.html" aria-label="Voltar para o calendário">&#8249;</a>
-      <h1>Resumo</h1>
-    </header>
-
-    <main class="scroll summary-screen">
-      <section class="summary-route" aria-label="Rota do voo">
-        <div><strong>DDB</strong><p>Avenida Paulista,<br>SP</p></div>
-        <span class="summary-route__arrow" aria-hidden="true">⟶</span>
-        <div class="summary-route__destination"><strong>LJH</strong><p>Bangu, RJ</p></div>
-        <div class="summary-route__meta"><span>▣ &nbsp;15 Set, 2026</span><span>◷ &nbsp;14:30 PM</span></div>
-      </section>
-
-      <article class="summary-aircraft">
-        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&amp;fit=crop&amp;w=900&amp;q=90" alt="Aeronave XPX 3000 escolhida para a viagem">
-        <div class="summary-aircraft__body">
-          <div><h2>XPX 3000</h2><p>Capacidade: 8 Passageiros</p></div><span class="rating">4 <b>★</b></span>
-        </div>
-      </article>
-
-      <section class="price-card summary-price" aria-labelledby="total-title">
-        <div class="price-row"><span>Viagem</span><strong>R$ 4.320,00</strong></div>
-        <div class="price-row"><span>Taxas e Impostos</span><strong>R$ 751,39</strong></div>
-        <div class="price-row price-row--total"><span id="total-title">Custo Total</span><strong>R$ 5.071,39</strong></div>
-      </section>
-
-      <a class="botao summary-button" href="index.html">Agendar</a>
-    </main>
-
-    <nav class="barraNavegacao" aria-label="Navegação principal">
-      <a href="index.html"><span class="nav-icon">⌂</span>Início</a>
-      <a href="#"><span class="nav-icon">✈</span>Voos</a>
-      <a href="aeronaves.html" class="is-active"><span class="nav-icon">◉</span>Explorar</a>
-    </nav>
-  </div>
+    <div class="app appResumo">
+        <header class="cabecalho cabecalhoCentralizado">
+            <a class="botaoVoltar" href="calendario.html">‹</a>
+            <h1>Resumo</h1>
+        </header>
+        <main class="scroll telaResumo">
+            <section class="resumoRota">
+                <div>
+                    <strong>DDB</strong>
+                    <p>Avenida Paulista,<br>SP</p>
+                </div>
+                <span class="resumoRotaSeta">⟶</span>
+                <div class="resumoRotaDestino">
+                    <strong>LJH</strong>
+                    <p>Bangu, RJ</p>
+                </div>
+                <div class="resumoRotaDados">
+                    <span>▣  15 Set, 2026</span>
+                    <span>◷  14:30 PM</span>
+                </div>
+            </section>
+            <article class="resumoAeronave">
+                <img src="assets/catalogo1.png" alt="Aeronave XPX 3000 escolhida para a viagem">
+                <div class="resumoAeronaveBody">
+                    <div>
+                        <h2>XPX 3000</h2>
+                        <p>Capacidade: 8 Passageiros</p>
+                    </div>
+                    <span class="avaliacao">4 <b>★</b>
+                    </span>
+                </div>
+            </article>
+            <section class="boxPreco resumoPreco">
+                <div class="linhaPreco">
+                    <span>Viagem</span>
+                    <strong>R$ 4.320,00</strong>
+                </div>
+                <div class="linhaPreco">
+                    <span>Taxas e Impostos</span>
+                    <strong>R$ 751,39</strong>
+                </div>
+                <div class="linhaPreco linhaPrecoTotal">
+                    <span id="total-title">Custo Total</span>
+                    <strong>R$ 5.071,39</strong>
+                </div>
+            </section>
+            <a class="botao resumoBotao" href="index.html">Agendar</a>
+        </main>
+        <nav class="barraNavegacao">
+            <a href="index.html">
+                <span class="iconeNavegacao">⌂</span>Início</a>
+            <a href="voos.html">
+                <span class="iconeNavegacao">✈</span>Voos</a>
+            <a href="aeronaves.html" class="selecionado">
+                <span class="iconeNavegacao">◉</span>Explorar</a>
+        </nav>
+    </div>
 </body>
 </html>

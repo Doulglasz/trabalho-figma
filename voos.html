@@ -1,130 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AeroSuite — Voos agendados</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyroad - Voos agendados</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="app">
-
-  <header class="cabecalho cabecalho--centered">
-    <a class="botaoVoltar" href="index.html">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a>
-    <h1>Voos agendados</h1>
-  </header>
-
-  <main class="app__scroll">
-    <section class="flight-list" aria-label="Lista de voos agendados">
-
-      <article class="boxVoo">
-        <div class="boxVooRota">
-          <div class="boxVooPartida">
-            <span class="boxVooAeroporto">BQH</span>
-            <span class="boxVooCidade">Florianópolis, SC</span>
-          </div>
-
-          <div class="caminho">
-            <span class="caminhoDuracao">35m</span>
-            <div class="caminhoLinha">
-              <span class="caminhoAviao" aria-hidden="true">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V4a1.5 1.5 0 0 0-3 0v5l-8 5v2l8-2.5V19l-2.5 1.5V22l3.5-1 3.5 1v-1.5L12 19v-5.5l9 2.5Z"/></svg>
-              </span>
-            </div>
-          </div>
-
-          <div class="boxVooPartida boxVooPartida--end">
-            <span class="boxVooAeroporto">LBG</span>
-            <span class="boxVooCidade">Vitória, ES</span>
-          </div>
-        </div>
-
-        <div class="boxVooDados">
-          <div>
-            <p class="boxVooDadosNome">Data</p>
-            <p class="boxVooDadosValor">31 Ago, 2026</p>
-          </div>
-          <div>
-            <p class="boxVooDadosNome">Partida</p>
-            <p class="boxVooDadosValor boxVooDadosValor--accent">15:00 · Agora</p>
-          </div>
-          <div>
-            <p class="boxVooDadosNome">Aeronave</p>
-            <p class="boxVooDadosValor">Gulfstream G650</p>
-          </div>
-          <div>
-            <p class="boxVooDadosNome">Passageiros</p>
-            <p class="boxVooDadosValor">4 Pessoas</p>
-          </div>
-        </div>
-
-        <a href="confirmar-voo.html" class="botao botaoPrimario botaoMargin">Confirmar Voo</a>
-      </article>
-
-      <article class="boxVoo">
-        <div class="boxVooRota">
-          <div class="boxVooPartida">
-            <span class="boxVooAeroporto">DDB</span>
-            <span class="boxVooCidade">Avenida Paulista, SP</span>
-          </div>
-
-          <div class="caminho">
-            <span class="caminhoDuracao">1h 45m</span>
-            <div class="caminhoLinha">
-              <span class="caminhoAviao" aria-hidden="true">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V4a1.5 1.5 0 0 0-3 0v5l-8 5v2l8-2.5V19l-2.5 1.5V22l3.5-1 3.5 1v-1.5L12 19v-5.5l9 2.5Z"/></svg>
-              </span>
-            </div>
-          </div>
-
-          <div class="boxVooPartida boxVooPartida--end">
-            <span class="boxVooAeroporto">LJH</span>
-            <span class="boxVooCidade">Bangu, RJ</span>
-          </div>
-        </div>
-
-        <div class="boxVooDados">
-          <div>
-            <p class="boxVooDadosNome">Data</p>
-            <p class="boxVooDadosValor">15 Set, 2026</p>
-          </div>
-          <div>
-            <p class="boxVooDadosNome">Partida</p>
-            <p class="boxVooDadosValor">14:30</p>
-          </div>
-          <div>
-            <p class="boxVooDadosNome">Aeronave</p>
-            <p class="boxVooDadosValor">XPX 3000</p>
-          </div>
-          <div>
-            <p class="boxVooDadosNome">Passageiros</p>
-            <p class="boxVooDadosValor">8 Pessoas</p>
-          </div>
-        </div>
-
-        <a href="#" class="verDetalhes verDetalhesFormat">Ver detalhes</a>
-      </article>
-    </section>
-
-  </main>
-
-  <nav class="barraNavegacao">
-    <a href="index.html">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M4 11.5 12 4l8 7.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v9h12v-9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      Início
-    </a>
-    <a href="voos.html" class="is-active">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M21 16v-2l-8-5V4a1.5 1.5 0 0 0-3 0v5l-8 5v2l8-2.5V19l-2.5 1.5V22l3.5-1 3.5 1v-1.5L12 19v-5.5l9 2.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      Voos
-    </a>
-    <a href="explorar.html">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="m15 9-2 6-6 2 2-6 6-2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-      Explorar
-    </a>
-  </nav>
-
-</div>
+    <div class="app">
+        <header class="cabecalho cabecalhoCentralizado">
+            <a class="botaoVoltar" href="index.html">‹</a>
+            <h1>Voos agendados</h1>
+        </header>
+        <main class="scroll">
+            <section class="listaVoos">
+                <article class="boxVoo">
+                    <div class="boxVooRota">
+                        <div class="boxVooPartida">
+                            <span class="boxVooAeroporto">BQH</span>
+                            <span class="boxVooCidade">Florianópolis, SC</span>
+                        </div>
+                        <div class="caminho">
+                            <span class="caminhoDuracao">35m</span>
+                            <div class="caminhoLinha">
+                                <span class="caminhoAviao">
+                                    <svg width="13" height="13" viewbox="0 0 24 24" fill="currentColor">
+                                        <path d="M21 16v-2l-8-5V4a1.5 1.5 0 0 0-3 0v5l-8 5v2l8-2.5V19l-2.5 1.5V22l3.5-1 3.5 1v-1.5L12 19v-5.5l9 2.5Z"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="boxVooPartida boxVooPartida--end">
+                            <span class="boxVooAeroporto">LBG</span>
+                            <span class="boxVooCidade">Vitória, ES</span>
+                        </div>
+                    </div>
+                    <div class="boxVooDados">
+                        <div>
+                            <p class="boxVooDadosNome">Data</p>
+                            <p class="boxVooDadosValor">31 Ago, 2026</p>
+                        </div>
+                        <div>
+                            <p class="boxVooDadosNome">Partida</p>
+                            <p class="boxVooDadosValor boxVooDadosValor--accent">15:00 · Agora</p>
+                        </div>
+                        <div>
+                            <p class="boxVooDadosNome">Aeronave</p>
+                            <p class="boxVooDadosValor">Gulfstream G650</p>
+                        </div>
+                        <div>
+                            <p class="boxVooDadosNome">Passageiros</p>
+                            <p class="boxVooDadosValor">4 Pessoas</p>
+                        </div>
+                    </div>
+                    <a href="confirmar-voo.html" class="botao botaoPrimario botaoMargin">Confirmar Voo</a>
+                </article>
+                <article class="boxVoo">
+                    <div class="boxVooRota">
+                        <div class="boxVooPartida">
+                            <span class="boxVooAeroporto">DDB</span>
+                            <span class="boxVooCidade">Avenida Paulista, SP</span>
+                        </div>
+                        <div class="caminho">
+                            <span class="caminhoDuracao">1h 45m</span>
+                            <div class="caminhoLinha">
+                                <span class="caminhoAviao">
+                                    <svg width="13" height="13" viewbox="0 0 24 24" fill="currentColor">
+                                        <path d="M21 16v-2l-8-5V4a1.5 1.5 0 0 0-3 0v5l-8 5v2l8-2.5V19l-2.5 1.5V22l3.5-1 3.5 1v-1.5L12 19v-5.5l9 2.5Z"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="boxVooPartida boxVooPartida--end">
+                            <span class="boxVooAeroporto">LJH</span>
+                            <span class="boxVooCidade">Bangu, RJ</span>
+                        </div>
+                    </div>
+                    <div class="boxVooDados">
+                        <div>
+                            <p class="boxVooDadosNome">Data</p>
+                            <p class="boxVooDadosValor">15 Set, 2026</p>
+                        </div>
+                        <div>
+                            <p class="boxVooDadosNome">Partida</p>
+                            <p class="boxVooDadosValor">14:30</p>
+                        </div>
+                        <div>
+                            <p class="boxVooDadosNome">Aeronave</p>
+                            <p class="boxVooDadosValor">XPX 3000</p>
+                        </div>
+                        <div>
+                            <p class="boxVooDadosNome">Passageiros</p>
+                            <p class="boxVooDadosValor">8 Pessoas</p>
+                        </div>
+                    </div>
+                    <a href="#" class="verDetalhes verDetalhesFormat">Ver detalhes</a>
+                </article>
+            </section>
+        </main>
+        <nav class="barraNavegacao">
+            <a href="index.html">
+                <span class="iconeNavegacao">⌂</span>Início</a>
+            <a href="voos.html" class="selecionado">
+                <span class="iconeNavegacao">✈</span>Voos</a>
+            <a href="aeronaves.html">
+                <span class="iconeNavegacao">◉</span>Explorar</a>
+        </nav>
+    </div>
 </body>
 </html>

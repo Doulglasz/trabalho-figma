@@ -1,60 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Selecione a aeronave | SkyPrime</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyroad - Selecione a aeronave</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="app app--aircraft">
-    <header class="cabecalho cabecalho--centered">
-      <a class="botaoVoltar" href="index.html" aria-label="Voltar para o início">&#8249;</a>
-      <h1>Selecione a aeronave</h1>
-    </header>
-
-    <main class="scroll aircraft-screen">
-      <section class="aircraft-grid" aria-label="Aeronaves disponíveis">
-        <a class="aircraft-card" href="calendario.html">
-          <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Aeronave XPX 3000 em voo">
-          <div class="aircraft-card__body"><h2>XPX 3000</h2><span class="rating">4 <b>★</b></span><p>AVIÃO</p></div>
-        </a>
-        <a class="aircraft-card" href="calendario.html">
-          <img src="https://images.unsplash.com/photo-1529074963764-98f45c47344b?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Aeronave L12 32V acima das nuvens">
-          <div class="aircraft-card__body"><h2>L12 32V</h2><span class="rating">4 <b>★</b></span><p>AVIÃO</p></div>
-        </a>
-        <a class="aircraft-card" href="calendario.html">
-          <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Jato Bentley 887 sobre o oceano">
-          <div class="aircraft-card__body"><h2>Bentley 887</h2><span class="rating">5 <b>★</b></span><p>JATO</p></div>
-        </a>
-        <a class="aircraft-card" href="calendario.html">
-          <img src="https://images.unsplash.com/photo-1569629743817-70d8db6c323b?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Jato Gasemour Expo 2 estacionado">
-          <div class="aircraft-card__body"><h2>Gasemour Expo 2</h2><span class="rating">4,5 <b>★</b></span><p>AVIÃO</p></div>
-        </a>
-        <a class="aircraft-card" href="calendario.html">
-          <img src="https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Aeronave Salmic 528X na pista">
-          <div class="aircraft-card__body"><h2>Salmic 528X</h2><span class="rating">4 <b>★</b></span><p>JATO</p></div>
-        </a>
-        <a class="aircraft-card" href="calendario.html">
-          <img src="https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Aeronave DD4XP33 em voo">
-          <div class="aircraft-card__body"><h2>DD4XP33</h2><span class="rating">3,5 <b>★</b></span><p>JATO</p></div>
-        </a>
-        <a class="aircraft-card" href="calendario.html">
-          <img src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Aeronave LitterTrox 80 no céu">
-          <div class="aircraft-card__body"><h2>LitterTrox 80</h2><span class="rating">3 <b>★</b></span><p>AVIÃO</p></div>
-        </a>
-        <a class="aircraft-card" href="calendario.html">
-          <img src="https://images.unsplash.com/photo-1556388158-158ea5ccacbd?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Aeronave amarela Sej 5552V4 na pista">
-          <div class="aircraft-card__body"><h2>Sej 5552V4</h2><span class="rating">2 <b>★</b></span><p>AVIÃO</p></div>
-        </a>
-      </section>
-    </main>
-
-    <nav class="barraNavegacao" aria-label="Navegação principal">
-      <a href="index.html"><span class="nav-icon">⌂</span>Início</a>
-      <a href="#"><span class="nav-icon">✈</span>Voos</a>
-      <a href="aeronaves.html" class="is-active"><span class="nav-icon">◉</span>Explorar</a>
-    </nav>
-  </div>
+    <div class="app appAeronaves">
+        <header class="cabecalho cabecalhoCentralizado">
+            <a class="botaoVoltar" href="index.html">‹</a>
+            <h1>Selecione a aeronave</h1>
+        </header>
+        <main class="scroll telaAeronaves">
+            <section class="aeronavesGrid">
+                <a class="aeronaveCard" href="calendario.html">
+                    <img src="assets/catalogo1.png" alt="Aeronave XPX 3000 em voo">
+                    <div class="aeronaveCardBody">
+                        <h2>XPX 3000</h2>
+                        <span class="avaliacao">4 <b>★</b>
+                        </span>
+                        <p>AVIÃO</p>
+                    </div>
+                </a>
+                <a class="aeronaveCard" href="calendario.html">
+                    <img src="assets/catalogo2.png" alt="Aeronave L12 32V acima das nuvens">
+                    <div class="aeronaveCardBody">
+                        <h2>L12 32V</h2>
+                        <span class="avaliacao">4 <b>★</b>
+                        </span>
+                        <p>AVIÃO</p>
+                    </div>
+                </a>
+                <a class="aeronaveCard" href="calendario.html">
+                    <img src="assets/catalogo3.png" alt="Jato Bentley 887 sobre o oceano">
+                    <div class="aeronaveCardBody">
+                        <h2>Bentley 887</h2>
+                        <span class="avaliacao">5 <b>★</b>
+                        </span>
+                        <p>JATO</p>
+                    </div>
+                </a>
+                <a class="aeronaveCard" href="calendario.html">
+                    <img src="assets/catalogo4.png" alt="Jato Gasemour Expo 2 estacionado">
+                    <div class="aeronaveCardBody">
+                        <h2>Gasemour Expo 2</h2>
+                        <span class="avaliacao">4,5 <b>★</b>
+                        </span>
+                        <p>AVIÃO</p>
+                    </div>
+                </a>
+                <a class="aeronaveCard" href="calendario.html">
+                    <img src="assets/catalogo5.png" alt="Aeronave Salmic 528X na pista">
+                    <div class="aeronaveCardBody">
+                        <h2>Salmic 528X</h2>
+                        <span class="avaliacao">4 <b>★</b>
+                        </span>
+                        <p>JATO</p>
+                    </div>
+                </a>
+                <a class="aeronaveCard" href="calendario.html">
+                    <img src="assets/catalogo6.png" alt="Aeronave DD4XP33 em voo">
+                    <div class="aeronaveCardBody">
+                        <h2>DD4XP33</h2>
+                        <span class="avaliacao">3,5 <b>★</b>
+                        </span>
+                        <p>JATO</p>
+                    </div>
+                </a>
+                <a class="aeronaveCard" href="calendario.html">
+                    <img src="assets/catalogo7.png" alt="Aeronave LitterTrox 80 no céu">
+                    <div class="aeronaveCardBody">
+                        <h2>LitterTrox 80</h2>
+                        <span class="avaliacao">3 <b>★</b>
+                        </span>
+                        <p>AVIÃO</p>
+                    </div>
+                </a>
+                <a class="aeronaveCard" href="calendario.html">
+                    <img src="assets/catalogo8.png" alt="Aeronave amarela Sej 5552V4 na pista">
+                    <div class="aeronaveCardBody">
+                        <h2>Sej 5552V4</h2>
+                        <span class="avaliacao">2 <b>★</b>
+                        </span>
+                        <p>AVIÃO</p>
+                    </div>
+                </a>
+            </section>
+        </main>
+        <nav class="barraNavegacao">
+            <a href="index.html">
+                <span class="iconeNavegacao">⌂</span>Início</a>
+            <a href="voos.html">
+                <span class="iconeNavegacao">✈</span>Voos</a>
+            <a href="aeronaves.html" class="selecionado">
+                <span class="iconeNavegacao">◉</span>Explorar</a>
+        </nav>
+    </div>
 </body>
 </html>
