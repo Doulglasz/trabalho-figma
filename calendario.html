@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escolha a data | SkyPrime</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app app--calendar">
+    <header class="cabecalho cabecalho--centered">
+      <a class="botaoVoltar" href="aeronaves.html" aria-label="Voltar para as aeronaves">&#8249;</a>
+      <h1>Que dia vai decolar?</h1>
+    </header>
+
+    <main class="scroll calendar-screen">
+      <section class="calendar" aria-labelledby="month-title">
+        <header class="calendar__header">
+          <h2 id="month-title">Setembro 2026</h2><span aria-hidden="true">›</span>
+        </header>
+        <div class="calendar__grid calendar__week" aria-hidden="true">
+          <span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span>
+        </div>
+        <div class="calendar__grid" aria-label="Dias de setembro de 2026">
+          <span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span><span>07</span>
+          <span>08</span><span>09</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span>
+          <a class="calendar__selected" href="resumo.html" aria-label="15 de setembro selecionado">15</a><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span>
+          <span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span>
+          <span>29</span><span>30</span><span>31</span>
+        </div>
+      </section>
+      <a class="botao calendar__button" href="resumo.html">Selecionar</a>
+    </main>
+
+    <nav class="barraNavegacao" aria-label="Navegação principal">
+      <a href="index.html"><span class="nav-icon">⌂</span>Início</a>
+      <a href="#"><span class="nav-icon">✈</span>Voos</a>
+      <a href="aeronaves.html" class="is-active"><span class="nav-icon">◉</span>Explorar</a>
+    </nav>
+  </div>
+</body>
+</html>

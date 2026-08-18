@@ -9,8 +9,8 @@
 <body>
 <div class="app">
 
-  <header class="topbar topbar--centered">
-    <a class="back-btn" href="voos.html" aria-label="Voltar">
+  <header class="cabecalho cabecalho--centered">
+    <a class="botaoVoltar" href="voos.html" aria-label="Voltar">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
     <h1>Confirme o Voo</h1>
@@ -30,20 +30,20 @@
       <div class="detail-card__route flight-route">
         <div class="flight-route__point">
           <span class="detail-card__origin-label">Origem</span>
-          <span class="flight-route__code" style="font-size:19px;">Santa Catarina</span>
-          <span class="flight-route__city">Florianópolis (BQH)</span>
+          <span class="boxVooAeroporto" style="font-size:19px;">Santa Catarina</span>
+          <span class="boxVooCidade">Florianópolis (BQH)</span>
         </div>
 
-        <div class="flight-path" style="min-width:44px;">
-          <div class="flight-path__plane" aria-hidden="true">
+        <div class="caminho" style="min-width:44px;">
+          <div class="caminhoAviao" aria-hidden="true">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V4a1.5 1.5 0 0 0-3 0v5l-8 5v2l8-2.5V19l-2.5 1.5V22l3.5-1 3.5 1v-1.5L12 19v-5.5l9 2.5Z"/></svg>
           </div>
         </div>
 
         <div class="flight-route__point flight-route__point--end">
           <span class="detail-card__dest-label">Destino</span>
-          <span class="flight-route__code" style="font-size:19px;">Espírito Santo</span>
-          <span class="flight-route__city">Vitória (LBG)</span>
+          <span class="boxVooAeroporto" style="font-size:19px;">Espírito Santo</span>
+          <span class="boxVooCidade">Vitória (LBG)</span>
         </div>
       </div>
 
@@ -105,11 +105,11 @@
       </div>
     </section>
 
-    <a href="voos.html" class="btn btn-primary">Confirmar e pagar</a>
+    <a href="voos.html" class="botao botaoPrimario">Confirmar e pagar</a>
 
   </main>
 
-  <nav class="bottom-nav" aria-label="Navegação principal">
+  <nav class="barraNavegacao" aria-label="Navegação principal">
     <a href="index.html">
       <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M4 11.5 12 4l8 7.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v9h12v-9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
       Início
